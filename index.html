@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <title>Pizzas</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body data-spy="scroll" data-target="#navId" data-offset="1">
+
+    <!--Implantation header-->
+    <header>
+        <img src="assets/img/header.jpg" class="img-fluid" alt="Pizza" />
+    </header>
+
+    <!--Navbar-->
+    <nav id="navId" class="navbar navbar-expand-md sticky-top">
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavId">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars text-dark"></i></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavId">
+            <ul class="navbar-nav nav-pills nav-justified my-2">
+                <li class="nav-item mr-5">
+                    <a class="nav-link active bg-info text-white" href="#signatures">SIGNATURES</a>
+                </li>
+                <li class="nav-item mr-5">
+                    <a class="nav-link bg-info text-white" href="#supremes">SUPRÊMES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-info text-white" href="#incontournables">INCONTOURNABLES</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Modal Spicy Dallas Burger-->
+    <div class="modal fade" id="commandSDB" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Vos nouveaux kilos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Votre pizza Spicy Dallas Burger a bien été ajoutée.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#commandSDB">Payer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Figue Chèvre-->
+    <div class="modal fade" id="commandFG" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Vos nouveaux kilos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Votre pizza Figue - Chèvre a bien été ajoutée.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#commandFG">Payer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Saumon-->
+    <div class="modal fade" id="commandSaumon" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Vos nouveaux kilos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Votre pizza Saumon a bien été ajoutée.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#commandSaumon">Payer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal 4 Fromages-->
+    <div class="modal fade" id="command4Fromages" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Vos nouveaux kilos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Votre pizza 4 Fromages a bien été ajoutée.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#command4Fromages">Payer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Bellachô-->
+    <div class="modal fade" id="commandBella" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Vos nouveaux kilos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Votre pizza Bellachô a bien été ajoutée.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#commandBella">Payer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Savoyarde-->
+    <div class="modal fade" id="commandSavoy" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Vos nouveaux kilos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Votre pizza Savoyarde a bien été ajoutée.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#commandSavoy">Payer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Pepper Beef-->
+    <div class="modal fade" id="commandPepB" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Vos nouveaux kilos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Votre pizza Pepper Beef a bien été ajoutée.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#commandPepB">Payer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Deluxe-->
+    <div class="modal fade" id="commandDeluxe" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Vos nouveaux kilos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Votre pizza Deluxe a bien été ajoutée.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#commandDeluxe">Payer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Reine-->
+    <div class="modal fade" id="commandReine" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Vos nouveaux kilos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Votre pizza Reine a bien été ajoutée.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#commandReine">Payer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Content-->
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-xs-1-12">
+                <h1 id="signatures"><span class="badge badge-dark">LES SIGNATURES</span></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-deck mb-5">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/sign1.png" alt="SPICY DALLAS BURGER" />
+                    <div class="card-body">
+                        <p class="h4 card-title">SPICY DALLAS BURGER</p>
+                        <p class="h1">
+                            <span class="badge badge-success">16€</span>
+                            <span class="float-right">
+                                <button type="button" data-toggle="popover" data-trigger="focus" data-placement="top"
+                                    data-title="SPICY DALLAS BURGER"
+                                    data-content="Sauce barbecue, mozzarella, saucisson pepperoni, oignons, boulettes de boeuf assaisonnées, poulet rôti, bacon, relevée avec une sauce Dallas, à la fois douce et piquante."
+                                    class="btn btn-info">+
+                                    d'infos
+                                </button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#commandSDB">Commander</button>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/sign2.png" alt="FIGUE - CHÈVRE" />
+                    <div class="card-body">
+                        <p class="h4 card-title">FIGUE - CHÈVRE</p>
+                        <p class="h1">
+                            <span class="badge badge-success">16€</span>
+                            <span class="float-right">
+                                <button type="button" data-toggle="popover" data-trigger="focus" data-placement="top"
+                                    data-title="FIGUE - CHÈVRE"
+                                    data-content="Crème fraîche légère, mozzarella, chèvre, bacon, Fourme d’Ambert A.O.P, figues séchées et oignons, nappée de miel."
+                                    class="btn btn-info">+
+                                    d'infos
+                                </button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#commandFG">Commander</button>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/sign3.png" alt="SAUMON" />
+                    <div class="card-body">
+                        <p class="h4 card-title">SAUMON</p>
+                        <p class="h1">
+                            <span class="badge badge-success">13€</span>
+                            <span class="float-right">
+                                <button type="button" data-toggle="popover" data-trigger="focus" data-placement="top"
+                                    data-title="SAUMON"
+                                    data-content="Crème fraîche légère, mozzarella, saumon fumé au bois de hêtre, pommes de terre sautées et oignons, agrémentée d’une sauce crème à l’échalote et à l’aneth."
+                                    class="btn btn-info">+
+                                    d'infos</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#commandSaumon">Commander</button>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-1-12">
+                    <h1 id="supremes"><span class="badge badge-dark">LES SUPRÊMES</span></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-deck mb-5">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/supr1.png" alt="4 FROMAGES" />
+                        <div class="card-body">
+                            <p class="h4 card-title">4 FROMAGES</p>
+                            <p class="h1">
+                                <span class="badge badge-success">13€</span>
+                                <span class="float-right">
+                                    <button type="button" data-toggle="popover" data-trigger="focus"
+                                        data-placement="top" data-title="4 FROMAGES"
+                                        data-content="Sauce tomate, mozzarella, chèvre, emmental & Fourme d’Ambert A.O.P."
+                                        class="btn btn-info">+
+                                        d'infos</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#command4Fromages">Commander</button>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/supr2.png" alt="BELLACHÔ" />
+                        <div class="card-body">
+                            <p class="h4 card-title">BELLACHÔ</p>
+                            <p class="h1">
+                                <span class="badge badge-success">13€</span>
+                                <span class="float-right">
+                                    <button type="button" data-toggle="popover" data-trigger="focus"
+                                        data-placement="top" data-title="BELLACHÔ"
+                                        data-content="Sauce tomate, mozzarella, chorizo, merguez & poivrons mélangés."
+                                        class="btn btn-info">+
+                                        d'infos</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#commandBella">Commander</button>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/supr3.png" alt="SAVOYARDE" />
+                        <div class="card-body">
+                            <p class="h4 card-title">SAVOYARDE</p>
+                            <p class="h1">
+                                <span class="badge badge-success">13€</span>
+                                <span class="float-right">
+                                    <button type="button" data-toggle="popover" data-trigger="focus"
+                                        data-placement="top" data-title="SAVOYARDE"
+                                        data-content="Crème fraîche légère, mozzarella, lardons fumés, pommes de terre sautées, Reblochon A.O.P. de Savoie & origan."
+                                        class="btn btn-info">+
+                                        d'infos</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#commandSavoy">Commander</button>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-1-12">
+                        <h1 id="incontournables"><span class="badge badge-dark">LES INCONTOURNABLES</span></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card-deck mb-5">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/incpepperbeef.png" alt="PEPPER BEEF" />
+                            <div class="card-body">
+                                <p class="h4 card-title">PEPPER BEEF</p>
+                                <p class="h1">
+                                    <span class="badge badge-success">13€</span>
+                                    <span class="float-right">
+                                        <button type="button" data-toggle="popover" data-trigger="focus"
+                                            data-placement="top" data-title="PEPPER BEEF"
+                                            data-content="Sauce tomate, mozzarella, pommes de terre sautées, boulettes de boeuf assaisonnées*, oignons & assaisonnement au poivre."
+                                            class="btn btn-info">+
+                                            d'infos</button>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#commandPepB">Commander</button>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/incdeluxe.png" alt="DELUXE" />
+                            <div class="card-body">
+                                <p class="h4 card-title">DELUXE</p>
+                                <p class="h1">
+                                    <span class="badge badge-success">13€</span>
+                                    <span class="float-right">
+                                        <button type="button" data-toggle="popover" data-trigger="focus"
+                                            data-placement="top" data-title="DELUXE"
+                                            data-content="Sauce tomate, mozzarella, boulettes de boeuf assaisonnées*, champignons, oignons & poivrons mélangés."
+                                            class="btn btn-info">+
+                                            d'infos</button>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#commandDeluxe">Commander</button>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/increine.png" alt="REINE" />
+                            <div class="card-body">
+                                <p class="h4 card-title">REINE</p>
+                                <p class="h1">
+                                    <span class="badge badge-success">13€</span>
+                                    <span class="float-right">
+                                        <button type="button" data-toggle="popover" data-trigger="focus"
+                                            data-placement="top" data-title="REINE"
+                                            data-content="Sauce tomate, mozzarella, jambon & champignons."
+                                            class="btn btn-info">+
+                                            d'infos</button>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#commandReine">Commander</button>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="text-center">
+            <p><span class="font-weight-bold">Domino's Pizza</span><br /><br />Avenue de la Tortue qui Chante<br />75001
+                Paris</p>
+            <a href="https://fr-fr.facebook.com/dominospizzafrance/" class="fa fa-facebook-square"></a>
+            <a href="https://twitter.com/dominos_pizzafr?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                class="fa fa-twitter-square"></a>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+        <!--Activation popover-->
+        <script>
+            $(function () {
+                $('[data-toggle="popover"]').popover()
+            })
+        </script>
+
+        <!--Script scrollspy-->
+        <script>
+            $('div{1:div|body}').scrollspy({
+                target: '#navId'
+            });
+        </script>
+
+</body>
+
+</html>

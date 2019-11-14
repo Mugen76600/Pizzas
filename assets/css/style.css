@@ -1,0 +1,53 @@
+body {
+    position: relative;
+    margin: auto;
+    align-items: center;
+    max-width: 1280px;
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    margin-bottom: -5px;
+}
+
+/*Les trois principales catégories*/
+.badge.badge-dark {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Couleur boutons commande et paiement*/
+.btn.btn-primary {
+    background-color: #d0011b;
+    border-color: #d0011b;
+}
+
+.navbar-brand img {
+    width: 10rem;
+}
+
+/*height, padding et margin gardent les catégories sous la navbar lors des jumplink*/
+nav {
+    height: 3rem;
+    background-color: #017aaf;
+    font-weight: bold;
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*#signatures {
+    padding-top: 3rem;
+    margin-top: -3rem;
+}
+
+#supremes {
+    padding-top: 3rem;
+    margin-top: -3rem;
+}
+
+#incontournables {
+    padding-top: 3rem;
+    margin-top: -3rem;
+}
